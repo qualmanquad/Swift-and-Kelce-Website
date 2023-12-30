@@ -120,6 +120,7 @@ p {
   width: 80px;
   height: 80px;
   animation: spin 2s linear infinite;
+  margin-bottom: 40px;
 
 }
 
@@ -170,5 +171,11 @@ p {
 #yesorno {
   text-align: center;
   font-size: 6em;
+}
+
+.datingtime {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 100px;
 }
 

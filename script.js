@@ -23,6 +23,8 @@ var button = ""
 var sleeptime = ""
 function loading() {
     var dateupdater = document.getElementById("dateupdater");
+    var datingtime = document.getElementById("datingtime")
+    datingtime.innerHTML = "";
     dateupdater.innerHTML = "";
     var loader = document.getElementById("yesorno");
     button = document.getElementById("button")
@@ -83,6 +85,6 @@ var begdate, todayDate;
          
          var datingtime = document.getElementById("datingtime")
 
-         datingtime.innerHTML = Math.round(days_difference) + " days dating";
+         datingtime.innerHTML = "Taylor and Travis have been dating for " + Math.round(days_difference) + " days";
 
 }
