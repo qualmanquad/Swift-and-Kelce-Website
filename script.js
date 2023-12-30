@@ -50,6 +50,7 @@ function getAnswer() {
     loader.innerHTML = "YES <img class='image3' src='couple_photos/couplephoto" + imageGenerator() + ".jpg' alt='' width='400' />";
     button.innerHTML = "REFRESH";
     todayDate();
+    datingTime();
 
 }
 
@@ -65,15 +66,23 @@ function imageGenerator() {
 
 }
 
-var date1, date2;  
+
+function datingTime() {
+
+var begdate, todayDate;  
 
          //define two date object variables with dates inside it  
-         date1 = new Date("07/15/2015");  
-         date2 = new Date("11/28/2016");  
+         begdate = new Date("09/27/2023");  
+         todayDate = new Date();  
   
          //calculate time difference  
-         var time_difference = date2.getTime() - date1.getTime();  
+         var time_difference = todayDate.getTime() - begdate.getTime();  
   
          //calculate days difference by dividing total milliseconds in a day  
-         var days_difference = time_difference / (1000 * 60 * 60 * 24);  
+         var days_difference = time_difference / (1000 * 60 * 60 * 24);
+         
+         var datingtime = document.getElementById("datingtime")
 
+         datingtime.innerHTML = Math.round(days_difference) + " days dating";
+
+}
